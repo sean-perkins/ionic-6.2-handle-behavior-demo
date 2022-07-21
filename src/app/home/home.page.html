@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <ion-modal [isOpen]="modalOpen" [breakpoints]="[0, 0.5, 0.75, 1]" [initialBreakpoint]="0.5"
+  <ion-modal #modal [isOpen]="modalOpen" [breakpoints]="[0, 0.5, 0.75, 1]" [initialBreakpoint]="0.5"
     (didDismiss)="onDidDismiss()" handleBehavior="cycle">
     <ng-template>
       <ion-header>
@@ -47,8 +47,9 @@
               <p>instagram.com</p>
             </div>
           </div>
-          <ion-button class="ml-auto" fill="clear" color="medium">
-            <ion-icon name="close"></ion-icon>
+          <ion-button class="ml-auto" fill="clear" color="medium" (click)="modal.dismiss()">
+            <ion-icon name=" close">
+            </ion-icon>
           </ion-button>
         </div>
       </ion-header>
@@ -67,22 +68,22 @@
         </div>
         <div class="flex snap-x overflow-auto gap-2 py-4">
           <div class="min-w-[100px]">
-            <img class="rounded" src="https://picsum.photos/200/300?random=2" />
+            <img class="rounded w-[100px] h-[150px]" src="https://picsum.photos/id/1003/200/300" />
           </div>
           <div class="min-w-[100px]">
-            <img class="rounded" src="https://picsum.photos/200/300?random=3" />
+            <img class="rounded w-[100px] h-[150px]" src="https://picsum.photos/id/1004/200/300" />
           </div>
           <div class="min-w-[100px]">
-            <img class="rounded" src="https://picsum.photos/200/300?random=4" />
+            <img class="rounded w-[100px] h-[150px]" src="https://picsum.photos/id/1005/200/300" />
           </div>
           <div class="min-w-[100px]">
-            <img class="rounded" src="https://picsum.photos/200/300?random=5" />
+            <img class="rounded w-[100px] h-[150px]" src="https://picsum.photos/id/1006/200/300" />
           </div>
           <div class="min-w-[100px]">
-            <img class="rounded" src="https://picsum.photos/200/300?random=6" />
+            <img class="rounded w-[100px] h-[150px]" src="https://picsum.photos/id/1011/200/300" />
           </div>
           <div class="min-w-[100px]">
-            <img class="rounded" src="https://picsum.photos/200/300?random=7" />
+            <img class="rounded w-[100px] h-[150px]" src="https://picsum.photos/id/1008/200/300" />
           </div>
         </div>
         <ion-card class="shadow border rounded-lg">
