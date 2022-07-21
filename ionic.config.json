@@ -1,0 +1,7 @@
+{
+  "name": "ionic-6.2-handle-behavior-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
