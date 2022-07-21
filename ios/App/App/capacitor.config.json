@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionic-6.2-handle-behavior-demo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
